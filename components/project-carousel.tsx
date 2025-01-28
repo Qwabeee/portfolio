@@ -1,83 +1,81 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import Image from "next/image"
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 // Project data
 const projects = [
   {
     id: 1,
-    title: "Website Design",
-    imageUrl: "/placeholder.svg?height=600&width=800",
-    link: "#",
+    title: "react portfolio",
+    imageUrl: "/images/portfolio.png",
+    link: "https://mondli-portfolio.vercel.app/",
     number: "01",
   },
   {
     id: 2,
-    title: "Mobile App Development",
-    imageUrl: "/placeholder.svg?height=600&width=800",
-    link: "#",
+    title: "Fitness web",
+    imageUrl: "/images/fit.png",
+    link: "https://fitnessweb-app.vercel.app",
     number: "02",
   },
   {
     id: 3,
-    title: "E-Commerce Solutions",
-    imageUrl: "/placeholder.svg?height=600&width=800",
-    link: "#",
+    title: "Sweethome web",
+    imageUrl: "/images/sweet.png",
+    link: "https://qwabeee.github.io/real-estate-website/",
     number: "03",
   },
   {
     id: 4,
-    title: "UI/UX Design",
-    imageUrl: "/placeholder.svg?height=600&width=800",
-    link: "#",
+    title: "Edu-learn",
+    imageUrl: "/images/edu.png",
+    link: "https://qwabeee.github.io/education-website/",
     number: "04",
   },
   {
     id: 5,
-    title: "CRM Systems",
-    imageUrl: "/placeholder.svg?height=600&width=800",
-    link: "#",
+    title: "Other projects",
+    imageUrl: "/images/computer.jpg",
+    link: "https://github.com/Qwabeee",
     number: "05",
   },
-  {
-    id: 6,
-    title: "SEO Optimization",
-    imageUrl: "/placeholder.svg?height=600&width=800",
-    link: "#",
-    number: "06",
-  },
-]
+];
 
 export default function ProjectCarousel() {
-  const [startIndex, setStartIndex] = useState(0)
+  const [startIndex, setStartIndex] = useState(0);
 
   // Get the current visible projects (3 at a time)
   const getVisibleProjects = () => {
-    const visibleProjects = []
+    const visibleProjects = [];
     for (let i = 0; i < 3; i++) {
-      const index = (startIndex + i) % projects.length
-      visibleProjects.push(projects[index])
+      const index = (startIndex + i) % projects.length;
+      visibleProjects.push(projects[index]);
     }
-    return visibleProjects
-  }
+    return visibleProjects;
+  };
 
   // Handle next slide
   const handleNext = () => {
-    setStartIndex((prevIndex) => (prevIndex + 1) % projects.length)
-  }
+    setStartIndex((prevIndex) => (prevIndex + 1) % projects.length);
+  };
 
   // Handle previous slide
   const handlePrev = () => {
-    setStartIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length)
-  }
+    setStartIndex(
+      (prevIndex) => (prevIndex - 1 + projects.length) % projects.length
+    );
+  };
 
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {getVisibleProjects().map((project) => (
-          <div key={project.id} className="relative h-[400px] group overflow-hidden rounded-lg">
+          <div
+            key={project.id}
+            className="relative h-[400px] group overflow-hidden rounded-lg"
+          >
             {/* Project Image */}
             <a href={project.link} className="block w-full h-full">
               <Image
@@ -101,7 +99,9 @@ export default function ProjectCarousel() {
 
               {/* Project title */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
-                <h3 className="text-2xl font-bold text-white">{project.title}</h3>
+                <h3 className="text-2xl font-bold text-white">
+                  {project.title}
+                </h3>
               </div>
             </a>
           </div>
@@ -126,5 +126,5 @@ export default function ProjectCarousel() {
         </button>
       </div>
     </div>
-  )
+  );
 }
