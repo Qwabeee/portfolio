@@ -1,9 +1,9 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import ProjectCarousel from "@/components/project-carousel"
-import ContactSection from "@/components/contact-section"
-import Footer from "@/components/footer"
-import MobileMenu from "@/components/mobile-menu"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import ProjectCarousel from "@/components/project-carousel";
+import ContactSection from "@/components/contact-section";
+import Footer from "@/components/footer";
+import MobileMenu from "@/components/mobile-menu";
 
 export default function Home() {
   return (
@@ -44,15 +44,15 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section - Reduced spacing */}
+      {/* Hero Section*/}
       <div className="container mx-auto px-6 pt-2 pb-8 md:pt-4 md:pb-16 lg:pt-6 lg:pb-20 relative bg-black">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 z-10">
             <h3 className="text-lg mb-2">HELLO I'M</h3>
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">Nhlonipho Makhanya</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+              Nhlonipho Makhanya
+            </h1>
             <p className="text-purple-500 text-xl mb-4">Web & App Developer</p>
-            <p className="mb-2">nhloniphom397@gmail.com</p>
-            <p className="mb-4">Mashona area Mahlabathini 3865</p>
 
             <div className="flex space-x-4">
               <Button
@@ -112,9 +112,13 @@ export default function Home() {
       <div className="container mx-auto px-6 py-16 bg-black">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2">
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-8">I Develop & Create Digital Innovations of tomorrow.</h1>
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-8">
+              I Develop & Create Digital Innovations of tomorrow.
+            </h1>
             <p className="text-gray-400 mb-6">
-              I transform ideas into cutting-edge digital experiences. With every project, I push the boundaries of what's possible in the digital landscape.
+              I transform ideas into cutting-edge digital experiences. With
+              every project, I push the boundaries of what's possible in the
+              digital landscape.
             </p>
           </div>
 
@@ -126,7 +130,10 @@ export default function Home() {
                 <span>80%</span>
               </div>
               <div className="h-2 bg-gray-700 rounded-full">
-                <div className="h-full bg-white rounded-full" style={{ width: "80%" }}></div>
+                <div
+                  className="h-full bg-white rounded-full"
+                  style={{ width: "80%" }}
+                ></div>
               </div>
             </div>
 
@@ -137,7 +144,10 @@ export default function Home() {
                 <span>74%</span>
               </div>
               <div className="h-2 bg-gray-700 rounded-full">
-                <div className="h-full bg-white rounded-full" style={{ width: "74%" }}></div>
+                <div
+                  className="h-full bg-white rounded-full"
+                  style={{ width: "74%" }}
+                ></div>
               </div>
             </div>
 
@@ -148,7 +158,10 @@ export default function Home() {
                 <span>82%</span>
               </div>
               <div className="h-2 bg-gray-700 rounded-full">
-                <div className="h-full bg-white rounded-full" style={{ width: "82%" }}></div>
+                <div
+                  className="h-full bg-white rounded-full"
+                  style={{ width: "82%" }}
+                ></div>
               </div>
             </div>
 
@@ -159,7 +172,10 @@ export default function Home() {
                 <span>85%</span>
               </div>
               <div className="h-2 bg-gray-700 rounded-full">
-                <div className="h-full bg-white rounded-full" style={{ width: "85%" }}></div>
+                <div
+                  className="h-full bg-white rounded-full"
+                  style={{ width: "85%" }}
+                ></div>
               </div>
             </div>
 
@@ -170,7 +186,10 @@ export default function Home() {
                 <span>85%</span>
               </div>
               <div className="h-2 bg-gray-700 rounded-full">
-                <div className="h-full bg-white rounded-full" style={{ width: "85%" }}></div>
+                <div
+                  className="h-full bg-white rounded-full"
+                  style={{ width: "85%" }}
+                ></div>
               </div>
             </div>
           </div>
@@ -188,13 +207,16 @@ export default function Home() {
         </div>
 
         <p className="text-gray-300 max-w-3xl mx-auto mb-12 text-center leading-relaxed">
-          I am a self-taught Web and App Developer specializing in building modern, responsive websites and mobile
-          applications. With a strong foundation in React, React Native, HTML, CSS, JavaScript, and version control
-          using Git/GitHub, I deliver clean, efficient, and user-centered solutions.
+          I am a self-taught Web and App Developer specializing in building
+          modern, responsive websites and mobile applications. With a strong
+          foundation in React, React Native, HTML, CSS, JavaScript, and version
+          control using Git/GitHub, I deliver clean, efficient, and
+          user-centered solutions.
           <br />
           <br />
-          Driven by a passion for problem-solving and continuous learning, I approach every project with
-          professionalism, adaptability, and a focus on high-quality results. I take pride in turning ideas into
+          Driven by a passion for problem-solving and continuous learning, I
+          approach every project with professionalism, adaptability, and a focus
+          on high-quality results. I take pride in turning ideas into
           functional, polished digital experiences that meet real-world needs.
         </p>
 
@@ -272,5 +294,5 @@ export default function Home() {
       {/* Footer */}
       <Footer />
     </div>
-  )
+  );
 }
