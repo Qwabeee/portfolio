@@ -6,12 +6,12 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <p className="text-gray-400">&copy; {new Date().getFullYear()} Nhlonipho Makhanya. All Rights Reserved.</p>
+            <p className="text-gray-400">&copy; {new Date().getFullYear()} Nhlonipho Mondli Makhanya. All Rights Reserved.</p>
           </div>
 
           <div className="flex space-x-6">
             <a
-              href="#"
+             href="https://wa.me/278207491438"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-purple-500 transition-colors"
@@ -21,7 +21,7 @@ export default function Footer() {
             </a>
             <a
               href="#"
-              target="_blank"
+              target="https://www.linkedin.com/in/nhlonipho-makhanya-a1a756258"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-purple-500 transition-colors"
               aria-label="LinkedIn"
@@ -30,8 +30,8 @@ export default function Footer() {
             </a>
             <a
               href="#"
+              href="https://github.com/Qwabeee"
               target="_blank"
-              rel="noopener noreferrer"
               className="text-gray-400 hover:text-purple-500 transition-colors"
               aria-label="GitHub"
             >
