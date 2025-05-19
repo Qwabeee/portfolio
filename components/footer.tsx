@@ -20,8 +20,8 @@ export default function Footer() {
               <MessageCircle size={24} />
             </a>
             <a
-              href="#"
-              target="https://www.linkedin.com/in/nhlonipho-makhanya-a1a756258"
+              href="https://www.linkedin.com/in/nhlonipho-makhanya-a1a756258"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-purple-500 transition-colors"
               aria-label="LinkedIn"
