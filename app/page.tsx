@@ -89,7 +89,7 @@ export default function Home() {
             {/* Profile image */}
             <div className="relative z-10">
               <Image
-                src="/images/profile.png"
+                src="https://i.postimg.cc/x1fXs4P7/IMG-20250322-WA0033-removebg-preview.png"
                 alt="Nhlonipho Makhanya"
                 width={500}
                 height={600}
